@@ -11,6 +11,8 @@ fetch(`${API_URL}/cases?country=Spain`)
 			cardImage.setAttribute("class", "card-image");
 			const img = document.createElement("img");
 			img.setAttribute("src", "https://via.placeholder.com/200");
+			img.setAttribute("loading", "lazy");
+			img.setAttribute("alt", comunity.comunity);
 			cardImage.appendChild(img);
 			card.appendChild(cardImage);
 

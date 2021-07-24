@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
   padding: 0;
   margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 nav {
@@ -10,6 +12,7 @@ nav {
       align-content: flex-end;
   position: -webkit-sticky;
   position: sticky;
+  top: 0;
 }
 
 nav .navcontainer {
@@ -105,7 +108,6 @@ nav .navcontainer .links {
 }
 
 #app .card .card-image {
-  background-color: red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -180,5 +182,30 @@ nav .navcontainer .links {
 #app .card .card-content .data .info .info-icon {
   font-size: 3rem;
   display: block;
+}
+
+footer {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 50px;
+  width: 100%;
+  background-color: #252525;
+  color: #fff;
+}
+
+footer p {
+  margin: 0 50px;
 }
 /*# sourceMappingURL=main.css.map */
