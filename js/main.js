@@ -1,13 +1,16 @@
 const HTML_RESPONSE = document.querySelector("#app");
 const API_URL = "https://covid-api.mmediagroup.fr/v1";
+begin();
 
-fetch(`${API_URL}/cases?country=Spain`)
-	.then((response) => response.json())
-	.then((communities) => {
-		toArray(communities).forEach((community) => {
-			createElement(community);
+function begin() {
+	fetch(`${API_URL}/cases?country=Spain`)
+		.then((response) => response.json())
+		.then((communities) => {
+			toArray(communities).forEach((community) => {
+				buildElements(community);
+			});
 		});
-	});
+}
 
 function toArray(communities) {
 	let array = [];
@@ -24,7 +27,8 @@ function toArray(communities) {
 	}
 	return array;
 }
-function createElement(community) {
+
+function buildElements(community) {
 	const card = document.createElement("div");
 	card.setAttribute("class", "card");
 	const cardImage = document.createElement("div");
