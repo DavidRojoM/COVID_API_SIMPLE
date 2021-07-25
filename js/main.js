@@ -1,5 +1,6 @@
 const HTML_RESPONSE = document.querySelector("#app");
 const API_URL = "https://covid-api.mmediagroup.fr/v1";
+import { flagBuilder } from "./flags.js";
 begin();
 
 function begin() {
@@ -34,8 +35,9 @@ function buildElements(community) {
 	const cardImage = document.createElement("div");
 	cardImage.setAttribute("class", "card-image");
 	const img = document.createElement("img");
-	img.setAttribute("src", "https://via.placeholder.com/200");
+	img.setAttribute("src", flagBuilder(community.community));
 	img.setAttribute("loading", "lazy");
+	img.setAttribute("width", "320");
 	img.setAttribute("alt", community.community);
 	cardImage.appendChild(img);
 	card.appendChild(cardImage);
