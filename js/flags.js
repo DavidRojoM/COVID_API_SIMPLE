@@ -3,7 +3,7 @@ export function flagBuilder(communityName) {
 		case "All":
 			return "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Bandera_de_Espa%C3%B1a_%28nuevo_dise%C3%B1o%29.svg/2560px-Bandera_de_Espa%C3%B1a_%28nuevo_dise%C3%B1o%29.svg.png";
 		case "Andalusia":
-			return "https://lh3.googleusercontent.com/proxy/9BeLbJSIrKZzq8Xj0M7IO31vOymwWtNr-K1swX2u9yIrYrm8kPwuvhfcUjEbypeYaskBuyoV15c9-2HhjFz3JCOZz_oZSzaRMaMQdPrswjBEg6cYZrpvymqg72isVF-LXMZAxHNP0-WTQIqivY5Tpg";
+			return "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Flag_of_Andalusia_%28simple%29.svg/1200px-Flag_of_Andalusia_%28simple%29.svg.png";
 		case "Aragon":
 			return "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Bandera_de_Arag%C3%B3n.svg/1200px-Bandera_de_Arag%C3%B3n.svg.png";
 		case "Asturias":

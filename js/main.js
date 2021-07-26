@@ -1,6 +1,8 @@
-const HTML_RESPONSE = document.querySelector("#app");
-const API_URL = "https://covid-api.mmediagroup.fr/v1";
 import { flagBuilder } from "./flags.js";
+import { seek } from "./seeker.js";
+const HTML_RESPONSE = document.querySelector("#app");
+const SEEKER = document.querySelector("#seeker");
+const API_URL = "https://covid-api.mmediagroup.fr/v1";
 begin();
 
 function begin() {
@@ -32,6 +34,7 @@ function toArray(communities) {
 function buildElements(community) {
 	const card = document.createElement("div");
 	card.setAttribute("class", "card");
+	card.setAttribute("id", community.community);
 	const cardImage = document.createElement("div");
 	cardImage.setAttribute("class", "card-image");
 	const img = document.createElement("img");
@@ -103,3 +106,8 @@ function buildElements(community) {
 	card.appendChild(cardContent);
 	HTML_RESPONSE.appendChild(card);
 }
+window.addEventListener("DOMContentLoaded", () => {
+	SEEKER.addEventListener("input", () => {
+		seek(SEEKER.value);
+	});
+});
