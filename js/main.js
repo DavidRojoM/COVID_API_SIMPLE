@@ -5,7 +5,6 @@ const SEEKER = document.querySelector("#seeker");
 const NAVBAR = document.querySelector("#navbar");
 const TITLE = document.querySelector("#title");
 const API_URL = "https://covid-api.mmediagroup.fr/v1";
-begin();
 
 function begin() {
 	fetch(`${API_URL}/cases?country=Spain`)
@@ -22,7 +21,7 @@ function toArray(communities) {
 	for (const community in communities) {
 		if (
 			Object.hasOwnProperty.call(communities, community) &&
-			community != "Unknown"
+			community !== "Unknown"
 		) {
 			array.push({
 				community: `${community}`,
@@ -115,6 +114,7 @@ function buildElements(community) {
 	HTML_RESPONSE.appendChild(card);
 }
 window.addEventListener("DOMContentLoaded", () => {
+	begin();
 	SEEKER.addEventListener("input", () => {
 		seek(SEEKER.value);
 	});
