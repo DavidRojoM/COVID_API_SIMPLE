@@ -7,6 +7,12 @@ $primary-font-color: #fff;
 	margin: 0;
 	font-family: "Roboto", sans-serif;
 }
+body{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 100vh;
+}
 nav {
 	background-color: $primary-color;
 	height: 50px;
@@ -18,34 +24,23 @@ nav {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		justify-content: space-between;
+		justify-content: space-evenly;
 		height: 50px;
-		width: 80%;
+		width: 15%;
 		margin: 0 auto;
 		color: $primary-font-color;
 
-		a {
-			color: inherit;
-			line-height: 50px;
-			display: block;
-			height: 100%;
-			width: 100px;
-			text-align: center;
-			text-decoration: none;
-			transition: 0.5s ease;
-
-			&:hover {
-				background-color: $primary-font-color;
-				color: $primary-color;
-				cursor: pointer;
-			}
+		.icon{
+			font-size: 1rem;
 		}
-
-		.links {
-			display: flex;
-			flex-direction: row;
-			align-content: space-between;
-			height: 100%;
+		input{
+			-webkit-appearance: none;
+			background-color: $primary-color;
+			border: 1px solid $primary-font-color;
+			border-radius: 5px;
+			height: 1rem;
+			padding: 5px;
+			color: $primary-font-color;
 		}
 	}
 }
@@ -67,7 +62,7 @@ header {
 		display: flex;
 		align-items: center;
 		margin-top: 50px;
-		background-color: $primary-color;
+		background-color: $primary-font-color;
 		width: 60%;
 		min-height: 200px;
 		border-radius: 20px;
@@ -83,6 +78,7 @@ header {
 			min-width: 200px;
 			max-width: 200px;
 			max-height: 200px;
+			border-right: 1px solid $primary-color;
 		}
 
 		.card-content {
@@ -132,4 +128,7 @@ footer {
 	p {
 		margin: 0 50px;
 	}
+}
+.hidden{
+	display: none !important;
 }

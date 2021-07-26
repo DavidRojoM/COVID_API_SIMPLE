@@ -5,65 +5,41 @@
   font-family: "Roboto", sans-serif;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
 nav {
   background-color: #252525;
   height: 50px;
-  -ms-flex-line-pack: end;
-      align-content: flex-end;
-  position: -webkit-sticky;
+  align-content: flex-end;
   position: sticky;
   top: 0;
 }
-
 nav .navcontainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
   height: 50px;
-  width: 80%;
+  width: 15%;
   margin: 0 auto;
   color: #fff;
 }
-
-nav .navcontainer a {
-  color: inherit;
-  line-height: 50px;
-  display: block;
-  height: 100%;
-  width: 100px;
-  text-align: center;
-  text-decoration: none;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
+nav .navcontainer .icon {
+  font-size: 1rem;
 }
-
-nav .navcontainer a:hover {
-  background-color: #fff;
-  color: #252525;
-  cursor: pointer;
-}
-
-nav .navcontainer .links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
-  height: 100%;
+nav .navcontainer input {
+  -webkit-appearance: none;
+  background-color: #252525;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  height: 1rem;
+  padding: 5px;
+  color: #fff;
 }
 
 header {
@@ -76,109 +52,58 @@ header {
 }
 
 #app {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
-
 #app .card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-top: 50px;
-  background-color: #252525;
+  background-color: #fff;
   width: 60%;
   min-height: 200px;
   border-radius: 20px;
   overflow: hidden;
-  -webkit-box-shadow: 0px 0px 7px 1px #252525;
-          box-shadow: 0px 0px 7px 1px #252525;
+  box-shadow: 0px 0px 7px 1px #252525;
 }
-
 #app .card .card-image {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   min-height: 200px;
   overflow: hidden;
   min-width: 200px;
   max-width: 200px;
   max-height: 200px;
+  border-right: 1px solid #252525;
 }
-
 #app .card .card-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
   background-color: #fff;
   width: 100%;
   min-height: 200px;
 }
-
 #app .card .card-content .data {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   min-height: 75px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
-
 #app .card .card-content .data .info {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   min-height: 120px;
   width: 150px;
 }
-
 #app .card .card-content .data .info .info-icon {
   font-size: 3rem;
   display: block;
@@ -186,26 +111,21 @@ header {
 
 footer {
   margin-top: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   height: 50px;
   width: 100%;
   background-color: #252525;
   color: #fff;
 }
-
 footer p {
   margin: 0 50px;
 }
+
+.hidden {
+  display: none !important;
+}
+
 /*# sourceMappingURL=main.css.map */
