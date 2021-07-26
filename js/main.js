@@ -67,7 +67,9 @@ function buildElements(community) {
 	info1.appendChild(info1h3);
 
 	const info1p = document.createElement("p");
-	info1p.appendChild(document.createTextNode(community.confirmed));
+	info1p.appendChild(
+		document.createTextNode(community.confirmed.toLocaleString())
+	);
 	info1.appendChild(info1p);
 	data.appendChild(info1);
 
@@ -83,7 +85,9 @@ function buildElements(community) {
 	info2.appendChild(info2h3);
 
 	const info2p = document.createElement("p");
-	info2p.appendChild(document.createTextNode(community.recovered));
+	info2p.appendChild(
+		document.createTextNode(community.recovered.toLocaleString())
+	);
 	info2.appendChild(info2p);
 	data.appendChild(info2);
 
@@ -99,7 +103,9 @@ function buildElements(community) {
 	info3.appendChild(info3h3);
 
 	const info3p = document.createElement("p");
-	info3p.appendChild(document.createTextNode(community.deaths));
+	info3p.appendChild(
+		document.createTextNode(community.deaths.toLocaleString())
+	);
 	info3.appendChild(info3p);
 	data.appendChild(info3);
 
