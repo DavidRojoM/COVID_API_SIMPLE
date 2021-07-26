@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-$primary-color: #252525;
+$primary-color: rgba(37,37,37,1);
 $primary-font-color: #fff;
 * {
 	padding: 0;
@@ -19,7 +19,7 @@ nav {
 	align-content: flex-end;
 	position: sticky;
 	top: 0;
-
+	transition: all 0.5s ease;
 	.navcontainer {
 		display: flex;
 		flex-direction: row;
@@ -35,7 +35,7 @@ nav {
 		}
 		input{
 			-webkit-appearance: none;
-			background-color: $primary-color;
+			background-color: inherit;
 			border: 1px solid $primary-font-color;
 			border-radius: 5px;
 			height: 1rem;
@@ -130,5 +130,8 @@ footer {
 	}
 }
 .hidden{
-	display: none !important;
+	display: none !important
+}
+.translucent{
+	background-color: rgba(37,37,37,.8);
 }

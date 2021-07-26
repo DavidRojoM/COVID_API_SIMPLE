@@ -2,6 +2,8 @@ import { flagBuilder } from "./flags.js";
 import { seek } from "./seeker.js";
 const HTML_RESPONSE = document.querySelector("#app");
 const SEEKER = document.querySelector("#seeker");
+const NAVBAR = document.querySelector("#navbar");
+const TITLE = document.querySelector("#title");
 const API_URL = "https://covid-api.mmediagroup.fr/v1";
 begin();
 
@@ -110,4 +112,15 @@ window.addEventListener("DOMContentLoaded", () => {
 	SEEKER.addEventListener("input", () => {
 		seek(SEEKER.value);
 	});
+});
+
+window.addEventListener("scroll", function () {
+	if (
+		TITLE.getBoundingClientRect().top <
+		NAVBAR.getBoundingClientRect().bottom + 20
+	) {
+		NAVBAR.classList.add("translucent");
+	} else {
+		NAVBAR.classList.remove("translucent");
+	}
 });
