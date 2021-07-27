@@ -1,0 +1,44 @@
+@import './main';
+@media screen and (max-width: 1050px) {
+
+	body{
+		font-size: 12px;
+	}
+	.navcontainer{
+		.icon{
+			display: none;
+		}
+	}
+	.card {
+		flex-direction: column;
+
+		.card-image{
+			margin-top: 20px;
+			border: 1px solid $primary-color;
+			border-radius: 20px;
+			min-height: 150px !important;
+			min-width: 150px!important;
+			max-width: 150px!important;
+			max-height: 150px!important;
+
+		}
+
+		.card-content{
+			min-height: 150px!important;
+			.data{
+				flex-direction: column;
+			}
+		}
+	}
+}
+@media screen and (max-width: 580px){
+	body{
+		font-size: 9px;
+	}
+.info{
+	min-height: 80px!important;
+	.info-icon{
+		font-size: 2rem!important;
+	}
+}
+}
