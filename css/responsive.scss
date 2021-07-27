@@ -35,10 +35,16 @@
 	body{
 		font-size: 9px;
 	}
-.info{
-	min-height: 80px!important;
-	.info-icon{
-		font-size: 2rem!important;
+	.card{
+
+		width: 80%!important;
+
+		.info{
+			min-height: 80px!important;
+			.info-icon{
+				font-size: 2rem!important;
+			}
+		}
 	}
-}
+
 }

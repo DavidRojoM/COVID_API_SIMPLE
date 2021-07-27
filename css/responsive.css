@@ -166,10 +166,13 @@ footer p {
     font-size: 9px;
   }
 
-  .info {
+  .card {
+    width: 80% !important;
+  }
+  .card .info {
     min-height: 80px !important;
   }
-  .info .info-icon {
+  .card .info .info-icon {
     font-size: 2rem !important;
   }
 }
