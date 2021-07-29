@@ -1,7 +1,6 @@
 export function seek(toSeek) {
 	let regExp = new RegExp(toSeek.toLowerCase());
-	const cardCollection = document.getElementsByClassName("card");
-	const cards = Array.from(cardCollection);
+	const cards = Array.from(document.getElementsByClassName("card"));
 	cards.forEach((card) =>
 		regExp.test(card.getAttribute("id").toLowerCase())
 			? card.classList.remove("hidden")
