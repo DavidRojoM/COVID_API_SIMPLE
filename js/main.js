@@ -26,7 +26,7 @@ function toArray(communities) {
     ) {
       array.push({
         community: `${community}`,
-        ...communities[community],
+        ...communities[community]
       })
     }
   }
