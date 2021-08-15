@@ -35,7 +35,7 @@ export function flagBuilder(communityName) {
     case 'Melilla':
       return 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Flag_of_Melilla.svg/1200px-Flag_of_Melilla.svg.png'
     case 'Murcia':
-      return 'https://www.rotuvall.es/wp-content/uploads/2019/07/Bandera-Comunidad-Murcia-ROTUVALL.jpg'
+      return 'https://www.banderasvdk.com/blog/wp-content/uploads/murcia_400px.jpg'
     case 'Navarra':
       return 'https://www.banderasphonline.com/wp-content/uploads/2020/03/comprar-bandera-navarra-con-escudo-para-exterior-interior.png'
     case 'Pais Vasco':

@@ -73,12 +73,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 200px;
   overflow: hidden;
-  min-width: 200px;
-  max-width: 200px;
-  max-height: 200px;
   border-right: 1px solid #252525;
+}
+#app .card .card-image img {
+  height: 200px;
 }
 #app .card .card-content {
   display: flex;

@@ -42,7 +42,6 @@ function buildElements(community) {
   const img = document.createElement('img')
   img.setAttribute('src', flagBuilder(community.community))
   img.setAttribute('loading', 'lazy')
-  img.setAttribute('width', '320')
   img.setAttribute('alt', community.community)
   cardImage.appendChild(img)
   card.appendChild(cardImage)
